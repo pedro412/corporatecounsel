@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>Corporate Counsel</title>
+
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+			}
+			html {
+				position: relative;
+				height: 100vh;
+			}
+
+			body {
+				font-family: 'Rubik', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+					Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue',
+					sans-serif;
+				font-size: calc(10px + 0.33vw);
+				-webkit-font-smoothing: antialiased;
+				color: #fff;
+				height: 100%;
+				background: linear-gradient(to right, #17497d, rgb(54, 209, 220));
+			}
+
+			.navbar {
+				padding: 10px;
+				padding-top: 30px;
+				display: flex;
+				align-items: center;
+			}
+
+			.logo h1 {
+				font-size: 38px;
+			}
+
+			.container {
+				max-width: 1170px;
+				margin: auto;
+			}
+
+			.menu {
+				display: flex;
+				justify-content: flex-end;
+				width: 100%;
+			}
+
+			.menu-list-item {
+				padding: 10px 15px;
+				list-style-type: none;
+			}
+			.menu-list-link {
+				text-decoration: none;
+				color: rgba(255, 255, 255, 0.8);
+				font-size: 20px;
+			}
+
+			.menu-list-link:hover {
+				color: rgba(255, 255, 255, 1);
+			}
+
+			.pt-50 {
+				padding-top: 30px;
+			}
+
+			.header-text {
+				max-width: 680px;
+				padding-top: 80px;
+			}
+
+			.header-text h1 {
+				font-size: 50px;
+				line-height: 60px;
+			}
+			.header-text p {
+				font-size: 20px;
+				padding-bottom: 15px;
+			}
+			.pt-5 {
+				padding-top: 10px;
+			}
+
+			.rocket-bg {
+				position: absolute;
+				right: 7%;
+				top: 90px;
+				z-index: -1;
+			}
+
+			.btn {
+				padding: 10px;
+				color: #fff;
+				font-weight: bold;
+				text-decoration: none;
+				font-size: 20px;
+				border-radius: 30px;
+				width: 250px;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				box-shadow: 0 7px 14px rgba(50, 50, 93, 0.1),
+					0 3px 6px rgba(0, 0, 0, 0.08);
+			}
+
+			.btn-primary {
+				background: linear-gradient(
+					to right,
+					rgb(234, 89, 103),
+					rgb(144, 31, 91)
+				);
+			}
+
+			.logo {
+				display: flex;
+				align-items: center;
+			}
+
+			.logo img {
+				width: 42px;
+				padding-right: 13px;
+			}
+		</style>
+	</head>
+	<body>
+		<nav class="navbar container">
+			<div class="logo">
+				<img src="logo.svg" alt="Corporate" />
+				<h1>CORPORATE</h1>
+			</div>
+			<ul class="menu ml-auto">
+				<li class="menu-list-item">
+					<a class="menu-list-link" href="">INICIO</a>
+				</li>
+				<li class="menu-list-item">
+					<a class="menu-list-link" href="">NOSOTROS</a>
+				</li>
+				<li class="menu-list-item">
+					<a class="menu-list-link" href="">TRABAJO</a>
+				</li>
+				<li class="menu-list-item">
+					<a class="menu-list-link" href="">CONTACTO</a>
+				</li>
+			</ul>
+		</nav>
+		<div class="container pt-50">
+			<div class="rocket-bg">
+				<img class="img-fluid" src="./rocket.png" alt="multi" />
+			</div>
+			<div class="header-text">
+				<h1>
+					Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+				</h1>
+				<p>
+					Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima, non.
+				</p>
+				<a class="btn btn-primary pt-5" href="">Contáctanos</a>
+			</div>
+		</div>
+	</body>
+</html>
