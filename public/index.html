@@ -22,9 +22,10 @@
 					sans-serif;
 				font-size: calc(10px + 0.33vw);
 				-webkit-font-smoothing: antialiased;
-				color: #fff;
 				height: 100%;
-				background: linear-gradient(to right, #17497d, rgb(54, 209, 220));
+				background-color: #fff;
+				color: #0e1e25;
+				font-size: 20px;
 			}
 
 			.navbar {
@@ -35,6 +36,7 @@
 			}
 
 			.logo h1 {
+				color: #fff;
 				font-size: 38px;
 			}
 
@@ -67,12 +69,24 @@
 				padding-top: 30px;
 			}
 
+			.illo {
+				background: linear-gradient(to right, #17497d, rgb(54, 209, 220));
+				position: absolute;
+				top: 0;
+				height: 500px;
+				width: 100%;
+				z-index: -1;
+			}
+
 			.header-text {
+				color: #fff;
 				max-width: 680px;
 				padding-top: 80px;
+				height: 390px;
 			}
 
 			.header-text h1 {
+				text-shadow: 0 2px 20px rgba(0, 0, 0, 0.16);
 				font-size: 50px;
 				line-height: 60px;
 			}
@@ -89,6 +103,10 @@
 				right: 7%;
 				top: 90px;
 				z-index: -1;
+			}
+
+			.rocket-bg img {
+				max-width: 380px;
 			}
 
 			.btn {
@@ -123,6 +141,36 @@
 				width: 42px;
 				padding-right: 13px;
 			}
+			.head {
+				font-weight: 500;
+				font-size: 45px;
+				margin-bottom: 5px;
+			}
+
+			.text-center {
+				text-align: center;
+			}
+			.persons {
+				align-items: center;
+				display: flex;
+				justify-content: space-around;
+				padding-top: 30px;
+			}
+			.person {
+				display: flex;
+				align-items: center;
+				font-size: 18px;
+			}
+
+			.person h3 {
+				color: #2d2d2d;
+			}
+
+			.thumb-pic {
+				width: 70px;
+				border-radius: 50%;
+				margin-right: 15px;
+			}
 		</style>
 	</head>
 	<body>
@@ -146,6 +194,7 @@
 				</li>
 			</ul>
 		</nav>
+		<div class="illo"></div>
 		<div class="container pt-50">
 			<div class="rocket-bg">
 				<img class="img-fluid" src="./rocket.png" alt="multi" />
@@ -158,6 +207,36 @@
 					Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima, non.
 				</p>
 				<a class="btn btn-primary pt-5" href="">Contáctanos</a>
+			</div>
+		</div>
+		<div class="container">
+			<h2 class="head text-center">Nosotros</h2>
+			<p>
+				Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus
+				deleniti commodi aspernatur repellat quibusdam perspiciatis
+			</p>
+			<div class="persons">
+				<div class="person">
+					<img class="thumb-pic" src="/public/pedro.jpg" alt="team" />
+					<div>
+						<h3>Pedro Alvarez</h3>
+						Web Development
+					</div>
+				</div>
+				<div class="person">
+					<img class="thumb-pic" src="/public/leonardo.jpg" alt="team" />
+					<div>
+						<h3>Leonardo Alvarez</h3>
+						Legal
+					</div>
+				</div>
+				<div class="person">
+					<img class="thumb-pic" src="/public/clara.jpg" alt="team" />
+					<div>
+						<h3>Clara Corona</h3>
+						Reclutamiento
+					</div>
+				</div>
 			</div>
 		</div>
 	</body>
